@@ -1,0 +1,9 @@
+.userInput {
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   width: 300px;
+   height: 100px;
+   margin-top: -50px; /* Half of total height */
+   margin-left: -150px; /* Half of total width */
+}
