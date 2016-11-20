@@ -4,6 +4,8 @@
   "description": "A mood analyzing chatbot that uses IBM Watson's Natural Language Classifier to figure out user's mood and uses IBM Watson's tone analyzer to categorize music by mood.",
   "main": "app.js",
   "dependencies": {
+    "cheerio": "^0.22.0",
+    "jsdom": "^9.8.3",
     "watson-developer-cloud": "^2.9.0"
   },
   "devDependencies": {},
