@@ -14,8 +14,11 @@ Run following commands
 ```npm install``` to install all npm packages
 
 To test out Watson Tone Analzyer demo, make sure to update app.js with secret keys:
+
 ```node app.js```
+
 To test out lyric scraping:
+
 ```node getLyrics.js```
 
 ## Tech used
