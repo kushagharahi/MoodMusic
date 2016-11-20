@@ -11,11 +11,14 @@ CD to working directory
 
 Run following commands
 
-```npm install```
+```npm install``` to install all npm packages
 
+To test out Watson Tone Analzyer demo, make sure to update app.js with secret keys:
 ```node app.js```
+To test out lyric scraping:
+```node getLyrics.js```
 
-### Tech used
+## Tech used
 * NodeJS
 * PostgreSQL 
 * IBM Watson APIs
