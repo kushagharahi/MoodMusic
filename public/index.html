@@ -1,0 +1,19 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <script src="js/conversation.js"></script>
+    <script src="js/connection.js"></script>
+</head>
+
+<img class="img-responsive center-block" src="img/logo.png" alt="MoodMusic!" />
+<div class="userInput">
+  <div id="chatBox">
+    
+  </div>
+    <label for="textInput">
+      <input type="text" name="textInput" id="textInput" placeholder="I used to love Kanye" 
+        onkeydown="Conversation.submitInput(event, this)"/>
+    </label>
+    <button type="button" class="btn btn-primary">Send</button>
+</div>
+
