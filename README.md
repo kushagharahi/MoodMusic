@@ -21,6 +21,10 @@ To test out lyric scraping:
 
 ```node getLyrics.js```
 
+To test out client-server functioning:
+
+`node server.js`
+
 ## Tech used
 * NodeJS
 * PostgreSQL 
