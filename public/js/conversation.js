@@ -4,9 +4,16 @@ var Conversation = (function() {
   // Public methods
   return {
     displayMessage: displayMessage,
-    submitInput: submitInput
+    submitInput: submitInput,
+    init: init
   };
 
+  // Start the conversation
+  function init() {
+    var start = true;
+    var context = {};
+    Connection.sendRequest('', context, start);
+  }
   // Handles input submission
   function submitInput(event, inputBox) {
     if (event.key === 'Enter' && inputBox.value) {
@@ -24,11 +31,18 @@ var Conversation = (function() {
     }
   }
 
-  function displayMessage(message) {
+  function displayMessage(message, author) {
     // Create an element to append to
+    var element = document.getElementById('chatBox');
+    element.appendChild(createMessage(message, author));
+  }
+
+  function createMessage(message, author) {
+    // Create an element to append to based on whether
+    // it's the user or Watson
+    // TODO: Styling for each author type
     var child = document.createElement('p');
     child.appendChild(document.createTextNode(message));
-    var element = document.getElementById('chatBox');
-    element.appendChild(child);
+    return child;
   }
 }());

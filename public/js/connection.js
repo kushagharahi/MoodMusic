@@ -19,14 +19,14 @@ var Connection = (function() {
   }
   function setResponsePayload(newPayloadStr) {
     responsePayload = JSON.parse(newPayloadStr);
-    Conversation.displayMessage(newPayloadStr);
+    Conversation.displayMessage(JSON.stringify(responsePayload.output.text[0]), 'WATSON');
   }
   function setRequestPayload(newPayloadStr) {
     requestPayload = JSON.parse(newPayloadStr);
-    Conversation.displayMessage(newPayloadStr);
+    Conversation.displayMessage(JSON.stringify(requestPayload.input.text), 'USER');
   }
 
-  function sendRequest(text, context) {
+  function sendRequest(text, context, init) {
     // Build request payload
     var payload = {
       input: {text: text},
@@ -44,7 +44,7 @@ var Connection = (function() {
     };
 
     var payloadToWatson = JSON.stringify(payload);
-    if (Object.getOwnPropertyNames(payload) !== 0) 
+    if (Object.getOwnPropertyNames(payload) !== 0 && !init) 
       setRequestPayload(payloadToWatson);
 
     // Send request
