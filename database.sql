@@ -12,8 +12,3 @@ CREATE TABLE song_info(
   joy decimal(7,6),
   sadness decimal(7,6)
 );
-
-INSERT INTO song_info (title, artist, anger, fear, disgust, joy, sadness)
- VALUES ('Kanye', 'I love kanye', 0.048534,  0.048534, 0.061673, 0.007832, 0.906378);
-
- 
