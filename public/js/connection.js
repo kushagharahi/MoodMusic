@@ -19,6 +19,7 @@ var Connection = (function() {
   }
   function setResponsePayload(newPayloadStr) {
     responsePayload = JSON.parse(newPayloadStr);
+    console.log(responsePayload);
     Conversation.displayMessage(JSON.stringify(responsePayload.output.text[0]), 'WATSON');
   }
   function setRequestPayload(newPayloadStr) {
