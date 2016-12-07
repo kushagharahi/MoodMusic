@@ -10,5 +10,6 @@ CREATE TABLE song_info(
   fear decimal(7,6),
   disgust decimal(7,6),
   joy decimal(7,6),
-  sadness decimal(7,6)
+  sadness decimal(7,6),
+  mostLikely varchar(20)
 );
