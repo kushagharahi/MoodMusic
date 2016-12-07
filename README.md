@@ -1,4 +1,4 @@
-![NoodMusic Logo](https://github.com/kushagharahi/MoodMusic/blob/master/logo.png)
+![MoodMusic Logo](https://github.com/kushagharahi/MoodMusic/blob/master/public/img/logo.png)
 
 [WIP] A mood analyzing chatbot that uses IBM Watson's Natural Language Classifier to figure out a user's mood and searches our database of music classified by mood using IBM Watson's tone analyzer to generate a playlist of music of mood.
 
