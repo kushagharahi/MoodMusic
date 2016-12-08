@@ -1,0 +1,25 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="app.css">
+</head>
+
+<img class="img-responsive center-block" src="logo.png" alt="MoodMusic!"></img>
+<div class="userInput">
+    <div>
+       >> Hello, how are you today? <br />
+       User: I'm sad today. <br />
+       >> I'm sorry you're sad today! Want a playlist of happy songs to cheer you up? <br />
+       User: Yes please!<br />
+       >> Here are some happy songs I found! <br />
+       <a style="padding-left:5px" href="">Happy - Pharrell Williams</a> <br />
+       <a style="padding-left:5px" href="">Generic Happy Song - Artist</a> <br />
+       <a style="padding-left:5px" href="">Generic Happy Song - Artist</a> <br />
+       <a style="padding-left:5px" href="">Generic Happy Song - Artist</a> <br />
+       <a style="padding-left:5px" href="">Generic Happy Song - Artist</a> <br />
+       <a style="padding-left:5px" href="">Generic Happy Song - Artist</a> <br />
+    </div>
+
+    <input type="text" style="margin:10 0 10 0; width:300px;"/>
+    <button type="button" class="btn btn-primary">Send</button>
+</div>
+
