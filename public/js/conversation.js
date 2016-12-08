@@ -20,8 +20,10 @@ var Conversation = (function() {
       // Retrieve context from previous response
       var context = {};
       var latestResponse = Connection.getResponsePayload();
-      if (latestResponse) 
+      if (latestResponse) {
         context = latestResponse.context;
+        context.yes_mood = 'none';
+      }
       
       // Send user's message to server
       Connection.sendRequest(inputBox.value, context);
@@ -42,7 +44,9 @@ var Conversation = (function() {
     // it's the user or Watson
     // TODO: Styling for each author type
     var child = document.createElement('p');
-    child.appendChild(document.createTextNode(message));
+    console.log(message);
+    child.innerHTML = message;
+    // child.appendChild(document.createTextNode(message));
     return child;
   }
 }());
