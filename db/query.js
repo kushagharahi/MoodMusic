@@ -19,24 +19,6 @@ var config = {
   database: 'moodmusic'
 };
 
-// var client = new pg.Client(config);
-
-// Connect to client
-// client.connect(function(err) {
-//   if (err) throw err;
-//
-//   // Execute a query
-//   client.query(queries.well, function(err, result) {
-//     if (err) throw err;
-//     for (let row of result.rows) 
-//       console.log(row.title);
-//
-//     client.end(function(err) {
-//       if (err) throw err;
-//     });
-//   });
-// });
-
 function querySongs(mood) {
   return new Promise(function(fulfill, reject) {
     var client = new pg.Client(config);
