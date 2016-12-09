@@ -67,7 +67,6 @@ app.post('/connection/message', function(req, res) {
     else {
       // Query and alter Watson's response if it's a music request
       if (data.intents[0]) {
-        // console.log(data.intents[0].intent);
         if (data.intents[0].intent === 'request') {
           if (data.entities[0]) {
             switch (data.entities[0].value) {

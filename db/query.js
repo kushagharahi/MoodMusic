@@ -8,12 +8,12 @@ var pg = require('pg');
 
 // Queries for different situations
 var queries = {
-  well: `SELECT title, artist FROM song_info WHERE most_likely = 'joy' 
-    OR most_likely = 'anger' OR most_likely = 'disgust' 
-    ORDER BY random() LIMIT 2`,
-  unwell: `SELECT title, artist FROM song_info WHERE most_likely = 'sadness'
-    OR most_likely = 'fear' ORDER BY random() LIMIT 2`,
-  neutral: `SELECT title, artist FROM song_info ORDER BY random() LIMIT 2`
+  well: `SELECT title, artist FROM song_info WHERE mostlikely = 'joy' 
+    OR mostlikely = 'anger' OR mostlikely = 'disgust' 
+    ORDER BY random() LIMIT 5`,
+  unwell: `SELECT title, artist FROM song_info WHERE mostlikely = 'sadness'
+    OR mostlikely = 'fear' ORDER BY random() LIMIT 5`,
+  neutral: `SELECT title, artist FROM song_info ORDER BY random() LIMIT 5`
 };
 var config = {
   database: 'moodmusic'
