@@ -16,7 +16,7 @@ var Conversation = (function() {
   }
   // Handles input submission
   function submitInput(event, inputBox) {
-    if (event.key === 'Enter' && inputBox.value) {
+    if ((event.key === 'Enter' || event.type === 'click') && inputBox.value) {
       // Retrieve context from previous response
       var context = {};
       var latestResponse = Connection.getResponsePayload();

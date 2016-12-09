@@ -13,9 +13,10 @@
   </div>
     <label for="textInput">
       <input type="text" name="textInput" id="textInput" 
-        placeholder="I used to love Kanye" autofocus
+        placeholder="Type something..." autofocus
         onkeydown="Conversation.submitInput(event, this)"/>
     </label>
-    <button type="button" class="btn btn-primary">Send</button>
+    <button type="button" class="btn btn-primary" 
+      onclick="Conversation.submitInput(event, document.getElementById('textInput'))">Send</button>
 </div>
 
